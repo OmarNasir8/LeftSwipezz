@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "828184812573",
+    "firebase_url": "https://upswipzz.firebaseio.com",
+    "project_id": "upswipzz",
+    "storage_bucket": "upswipzz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828184812573:android:b8a35ee279ca825382faf4",
+        "android_client_info": {
+          "package_name": "com.omarn.upswipezz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "828184812573-08bkgjkbl1hh721nb4rmg3ta3eemvhjh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.omarn.upswipezz",
+            "certificate_hash": "6d4056c17a1752833729234597e436f45a9fc434"
+          }
+        },
+        {
+          "client_id": "828184812573-khhhi0emcdisdnefiecld1q1ouqpi236.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-Uo6aAyecilIwAMAtnvgSmhWkS_9revo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "828184812573-khhhi0emcdisdnefiecld1q1ouqpi236.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

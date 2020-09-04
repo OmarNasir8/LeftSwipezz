@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ProfileFragment">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            >
+
+            <ImageView
+                android:id="@+id/photoIV"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:paddingBottom="8dp"
+                android:src="@drawable/profileiconpc"
+            >
+            </ImageView>
+            
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nameTL"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/photoIV"
+                android:paddingBottom="8dp"
+                android:textColorHint="#FFFF00"
+                >
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/profileNameET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:shadowColor="#FFFF00"
+                    android:textColor="#FFFF00"
+                    android:textColorHint="#FFFF00"
+                    android:textColorHighlight="#FFFF00"
+                    >
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailTL"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nameTL"
+                android:paddingBottom="8dp"
+                android:textColorHint="#FFFF00"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/profileEmailET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:shadowColor="#FFFF00"
+                    android:textColor="#FFFF00"
+                    android:textColorHint="#FFFF00"
+                    android:textColorHighlight="#FFFF00"
+                    >
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ageTL"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emailTL"
+                android:paddingBottom="8dp"
+                android:textColorHint="#FFFF00"
+                >
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/profileAgeET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Age"
+                    android:shadowColor="#FFFF00"
+                    android:textColor="#FFFF00"
+                    android:textColorHint="#FFFF00"
+                    android:textColorHighlight="#FFFF00"
+                    >
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            
+            <LinearLayout
+                android:id="@+id/radio1Layout"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ageTL"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                >
+            
+            <TextView
+                android:id="@+id/genderTV"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:padding="8dp"
+                android:layout_weight="1"
+                android:text="I am a:"
+                android:textColor="#FFFF00"
+                ></TextView>
+                
+            <RadioGroup
+                android:id="@+id/radio1"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:paddingBottom="8dp"
+                android:gravity="right"
+                android:orientation="horizontal"
+                >
+
+                <RadioButton
+                    android:id="@+id/radioMan1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="man"
+                    android:textColor="#FFFF00"
+                    ></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radioWoman1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="woman"
+                    android:textColor="#FFFF00"
+                    ></RadioButton>
+
+            </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/radio2Layout"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radio1Layout"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:outlineSpotShadowColor="#FFFF00"
+                android:outlineAmbientShadowColor="#FFFF00"
+
+                >
+
+                <TextView
+                    android:id="@+id/preferredGenderTV"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:padding="8dp"
+                    android:layout_weight="1"
+                    android:text="Looking for :"
+                    android:textColor="#FFFF00"
+                    ></TextView>
+
+                <RadioGroup
+                    android:id="@+id/radio2"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="2"
+                    android:paddingBottom="8dp"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:outlineAmbientShadowColor="#FFFF00"
+                    android:outlineSpotShadowColor="#FFFF00"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/radioMan2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="man"
+                        android:textColor="#FFFF00"
+                        ></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radioWoman2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="woman"
+                        android:textColor="#FFFF00"
+                        ></RadioButton>
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <ImageButton
+                android:id="@+id/applyBT"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/radio2Layout"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/apply"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/signOutBT"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/applyBT"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/signout">
+            </ImageButton>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#aaaaaaaa"
+        >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </ProgressBar>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
